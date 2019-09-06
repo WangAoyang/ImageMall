@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+
+    /// <summary>
+    /// 用户表
+    /// </summary>
     public class UserInfo
     {
 

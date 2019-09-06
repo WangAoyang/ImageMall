@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// 租赁表
+    /// </summary>
     public class Lease
     {
         /// <summary>

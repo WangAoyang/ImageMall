@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+
+    /// <summary>
+    /// 热门搜素
+    /// </summary>
     public class Search
     {
         /// <summary>

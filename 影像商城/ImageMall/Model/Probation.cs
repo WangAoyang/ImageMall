@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+
+    /// <summary>
+    /// 试用表
+    /// </summary>
     public class Probation
     {
         /// <summary>

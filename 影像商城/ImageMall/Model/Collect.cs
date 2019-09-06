@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// 收藏表
+    /// </summary>
     public class Collect
     {
         /// <summary>

@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// 详细咨询表
+    /// </summary>
     public class Verbose
     {
         /// <summary>

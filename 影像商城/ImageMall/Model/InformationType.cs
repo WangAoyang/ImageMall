@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+
+    /// <summary>
+    /// 咨询类别表
+    /// </summary>
     public class InformationType
     {
         /// <summary>

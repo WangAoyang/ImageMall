@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+
+    /// <summary>
+    /// 积分表
+    /// </summary>
     public class Integral
     {
         /// <summary>

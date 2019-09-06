@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+
+    /// <summary>
+    /// 秒杀表
+    /// </summary>
     public class Seckill
     {
 

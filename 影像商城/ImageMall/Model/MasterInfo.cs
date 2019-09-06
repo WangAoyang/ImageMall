@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// 主数据表
+    /// </summary>
     public class MasterInfo
     {
         /// <summary>

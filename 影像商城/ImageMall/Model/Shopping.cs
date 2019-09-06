@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// 购物车
+    /// </summary>
     public class Shopping
     {
         /// <summary>
