@@ -10,7 +10,7 @@ namespace Model
     /// <summary>
     /// 地址表
     /// </summary>
-    public class AddressInfo
+    public class AddressInfo: BaseEntity
     {
 
         /// <summary>

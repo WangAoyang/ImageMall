@@ -32,7 +32,7 @@
         },
         methods: {
             pagehandler: function () {
-                axios.get("http://localhost:5585/api/Student").then((response) => {
+                axios.get("http://localhost:5585/api/AddressInfo").then((response) => {
 
                     for (var i = 0; i < response.InboxList.length; i++) {
                         this.studentlist.push(response.InboxList[i]);
