@@ -46,7 +46,7 @@ namespace Service
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseMySQL("Data Source=169.254.20.176;Initial Catalog=1612;User ID=wangaoyang;pwd=1234");
+                optionsBuilder.UseMySQL("Data Source=169.254.20.176;Initial Catalog=ImageMall;User ID=wangaoyang;pwd=1234");
             }
         }
 

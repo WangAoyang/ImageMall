@@ -11,14 +11,14 @@ namespace ImageMall_API.Controllers
     public class ValuesController : ControllerBase
     {
         // GET api/values
-        [HttpGet]
+        [HttpGet("Get")]
         public ActionResult<IEnumerable<string>> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/values/5
         [HttpGet("{id}")]
+        // GET api/values/5
         public ActionResult<string> Get(int id)
         {
             return "value";
@@ -31,13 +31,13 @@ namespace ImageMall_API.Controllers
         }
 
         // PUT api/values/5
-        [HttpPut("{id}")]
+        [HttpPut("Put")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
         // DELETE api/values/5
-        [HttpDelete("{id}")]
+        [HttpDelete("Delete")]
         public void Delete(int id)
         {
         }

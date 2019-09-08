@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageMall_API", "ImageMall_API\ImageMall_API.csproj", "{40BF845E-ADE8-4480-A1A5-2538C3280117}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageMall_API", "ImageMall_API\ImageMall_API.csproj", "{40BF845E-ADE8-4480-A1A5-2538C3280117}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{0A96E961-7AC1-42EF-BD3E-4E8057D8C5C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{0A96E961-7AC1-42EF-BD3E-4E8057D8C5C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaChe", "CaChe\CaChe.csproj", "{2001B453-4FF8-4780-AEED-16A08933B84D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaChe", "CaChe\CaChe.csproj", "{2001B453-4FF8-4780-AEED-16A08933B84D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{299E1E6B-59A1-43BA-9A34-B35BD5BE7020}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{299E1E6B-59A1-43BA-9A34-B35BD5BE7020}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IService", "IService\IService.csproj", "{820B5B55-5A21-4942-AE6F-96D73D9A3FA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IService", "IService\IService.csproj", "{820B5B55-5A21-4942-AE6F-96D73D9A3FA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{A77B36AF-600D-4BF8-9603-3FD86F257FBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{A77B36AF-600D-4BF8-9603-3FD86F257FBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageMall_Web", "ImageMall_Web\ImageMall_Web.csproj", "{B06275A8-6194-4E5E-BE7D-E8BB6785F25E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{A77B36AF-600D-4BF8-9603-3FD86F257FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A77B36AF-600D-4BF8-9603-3FD86F257FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A77B36AF-600D-4BF8-9603-3FD86F257FBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B06275A8-6194-4E5E-BE7D-E8BB6785F25E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B06275A8-6194-4E5E-BE7D-E8BB6785F25E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B06275A8-6194-4E5E-BE7D-E8BB6785F25E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B06275A8-6194-4E5E-BE7D-E8BB6785F25E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

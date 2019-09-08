@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using IService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -9,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Service;
 
 namespace ImageMall_API
 {
@@ -25,28 +28,33 @@ namespace ImageMall_API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            #region 跨域  
-            //配置跨域处理，允许所有来源：
+
+            services.AddScoped<IStudentService, StudentService>();   //注册数据访问层 接口与实现类 关系
+
+
+            //注册跨域服务，允许所有来源
             services.AddCors(options =>
+                options.AddPolicy("AllowAnyCors",
+                p => p.AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin().AllowCredentials().AllowAnyOrigin())
+            );
 
+            services.AddSwaggerGen(options =>
             {
-
-                options.AddPolicy("any", builder =>
-
+                options.SwaggerDoc("v1", new Info
                 {
-
-                    builder.AllowAnyOrigin() //允许任何来源的主机访问
-
-                    .AllowAnyMethod()
-
-                    .AllowAnyHeader()
-
-                    .AllowCredentials();//指定处理cookie
-
+                    Version = "v1",
+                    Title = "test"
                 });
 
+                // 为 Swagger JSON and UI设置xml文档注释路径
+                var basePath = Path.GetDirectoryName(typeof(Program).Assembly.Location);
+
+                //获取应用程序所在目录（绝对路径，不受工作目录影响，建议采用此方法获取路径）
+                var xmlPath = Path.Combine(basePath, "SwaggerDemo.xml");
+
+                //如果需要显示控制器注释只需将第二个参数设置为true
+                options.IncludeXmlComments(xmlPath, true);
             });
-            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,8 +65,20 @@ namespace ImageMall_API
                 app.UseDeveloperExceptionPage();
             }
 
+            //允许跨域访问
+            app.UseCors("AllowAnyCors");
+            app.UseHttpsRedirection();
             app.UseMvc();
-            app.UseCors("any");   //全局的，将影响所有控制器
+
+            //配置Swagger  
+            //浏览地址：http://localhost:50449/index.html
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "test");
+                c.RoutePrefix = string.Empty;
+            });
         }
     }
 }
