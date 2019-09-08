@@ -9,6 +9,9 @@ using Model;
 
 namespace ImageMall_API.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class StudentController : ControllerBase

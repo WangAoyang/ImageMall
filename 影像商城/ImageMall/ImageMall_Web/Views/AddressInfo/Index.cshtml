@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+<div>
+    <table>
+        <thead class="divstudents" id="divstudents">
+            <tr>
+                <td>ID</td>
+                <td>商品名称</td>
+                <td>市场价格</td>
+        </thead>
+        <tbody>
+            <tr v-for="item in InboxList">
+                <td>{{item.Id}}</td>
+                <td>{{item.Name}}</td>
+                <td>{{item.Pid}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+    var vm = new Vue({
+        el: "#divstudents",
+        data: {
+
+        },
+        mounted() {
+            this.pagehandler();
+        },
+        methods: {
+            pagehandler: function () {
+                axios.get("http://localhost:5585/api/Student").then((response) => {
+
+                    for (var i = 0; i < response.InboxList.length; i++) {
+                        this.studentlist.push(response.InboxList[i]);
+                    }
+                });
+            }
+        }
+    })
+</script>
