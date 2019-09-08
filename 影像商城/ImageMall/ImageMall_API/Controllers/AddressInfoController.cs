@@ -37,5 +37,12 @@ namespace ImageMall_API.Controllers
             int i = _addressInfoService.Insert(addressInfo);
             return i;
         }
+
+        [HttpGet]
+        public List<AddressInfo> GetAddressInfo()
+        {
+            var list = _addressInfoService.Index();
+            return list;
+        }
     }
 }

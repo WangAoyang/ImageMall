@@ -14,6 +14,11 @@ namespace IService
         DbSet<T> Entities { get; }
 
         /// <summary>
+        /// 显示
+        /// </summary>
+        /// <returns></returns>
+        List<T> Index();
+        /// <summary>
         /// 增加单个实体
         /// </summary>
         /// <param name="entity"></param>

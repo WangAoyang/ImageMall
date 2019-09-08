@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Model;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Service
@@ -14,6 +15,12 @@ namespace Service
         public DbSet<T> Entities
         {
             get { return dt.Set<T>(); }
+        }
+
+        public List<T> Index()
+        {
+            var list = Entities.ToList();
+            return list;
         }
 
         public int Insert(T entity)
