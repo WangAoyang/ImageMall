@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+
+    /// <summary>
+    /// 图片表
+    /// </summary>
    public class Picture
     {
         /// <summary>

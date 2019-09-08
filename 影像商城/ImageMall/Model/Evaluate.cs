@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// 评价表
+    /// </summary>
     public class Evaluate
     {
         /// <summary>

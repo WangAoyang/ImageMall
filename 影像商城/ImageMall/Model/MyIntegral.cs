@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// 我的积分
+    /// </summary>
    public  class MyIntegral
     {
         /// <summary>

@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// 申请表
+    /// </summary>
     public class Application
     {
         /// <summary>

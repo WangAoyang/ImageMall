@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// 我的余额
+    /// </summary>
     public class MyBalance
     {
         /// <summary>

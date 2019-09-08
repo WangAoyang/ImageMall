@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// 商品类别表
+    /// </summary>
     public class TypeInfo
     {
 

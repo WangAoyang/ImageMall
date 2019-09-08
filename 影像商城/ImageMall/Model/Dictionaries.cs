@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+
+    /// <summary>
+    /// 字典表
+    /// </summary>
     public class Dictionaries
     {
         /// <summary>

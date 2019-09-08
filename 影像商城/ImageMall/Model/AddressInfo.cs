@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// 地址表
+    /// </summary>
     public class AddressInfo
     {
 

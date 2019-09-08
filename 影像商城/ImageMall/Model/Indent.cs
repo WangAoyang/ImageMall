@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// 订单表
+    /// </summary>
     public class Indent
     {
 

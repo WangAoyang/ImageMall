@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// 活动表
+    /// </summary>
     public class Activity
     {
         /// <summary>
