@@ -2,21 +2,23 @@
 @{
     ViewData["Title"] = "Index";
 }
-
+<script src="~/js/vue/vue.js"></script>
+<script src="~/js/vue/axios.js"></script>
 <h2>Index</h2>
-<div>
-    <table>
-        <thead class="divstudents" id="divstudents">
+<script src="~/js/jquery-3.3.1.js"></script>
+<div  id="divstudents">
+    <table class="table table-bordered">
+        <thead>
             <tr>
                 <td>ID</td>
                 <td>商品名称</td>
                 <td>市场价格</td>
         </thead>
         <tbody>
-            <tr v-for="item in InboxList">
-                <td>{{item.Id}}</td>
-                <td>{{item.Name}}</td>
-                <td>{{item.Pid}}</td>
+            <tr v-for="item in list">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.pid}}</td>
             </tr>
         </tbody>
     </table>
@@ -25,7 +27,7 @@
     var vm = new Vue({
         el: "#divstudents",
         data: {
-
+            list:[]
         },
         mounted() {
             this.pagehandler();
@@ -33,10 +35,11 @@
         methods: {
             pagehandler: function () {
                 axios.get("http://localhost:5585/api/AddressInfo").then((response) => {
-
-                    for (var i = 0; i < response.InboxList.length; i++) {
-                        this.studentlist.push(response.InboxList[i]);
+                    this.list = []
+                    for (var i = 0; i < response.data.length; i++) {
+                        this.list.push(response.data[i]);
                     }
+                    console.log(this.list)
                 });
             }
         }
