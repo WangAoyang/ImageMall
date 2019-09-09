@@ -28,8 +28,7 @@ namespace ImageMall_API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
-            services.AddScoped<IStudentService, StudentService>();   //注册数据访问层 接口与实现类 关系
+            
             services.AddScoped<IAddressInfoService, AddressInfoService>();   //注册数据访问层 接口与实现类 关系
 
 
