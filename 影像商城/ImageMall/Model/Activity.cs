@@ -10,7 +10,7 @@ namespace Model
     /// <summary>
     /// 活动表
     /// </summary>
-    public class Activity
+    public class Activity: BaseEntity
     {
         /// <summary>
         /// 编号
