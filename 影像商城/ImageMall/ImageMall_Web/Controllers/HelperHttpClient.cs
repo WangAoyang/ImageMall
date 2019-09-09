@@ -6,7 +6,7 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace HospitalScheds.Common
+namespace ImageMall_Web.Controllers
 {
     public static class HelperHttpClient
     {
