@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<script src="~/js/vue/vue.js"></script>
+<script src="~/js/vue/axios.js"></script>
+<h2>Index</h2>
+<script src="~/js/jquery-3.3.1.js"></script>
+
+<div id="divstudents">
+    <table class="table table-bordered">
+     
+        <tbody >
+            <tr v-for="item in list">
+
+                <td>
+                    <a href="#" style="cursor:pointer;text-decoration:none">
+                        <img src="~/images/1.jpg" style=" width:100px;height:100px" />
+
+                    </a>
+                  
+                    <a href="#" style="cursor:pointer;text-decoration:none;color:black;font-weight:bolder;font-size:20px" >
+                        {{item.integralName}}
+                    </a>
+
+                  
+                    <a href="#" style="cursor:pointer;text-decoration:none;color:black;">
+                        {{item.needIntegral}}
+                    </a>
+                    <a href="#" style="cursor:pointer;text-decoration:none;color:black;">
+                        {{item.originalPrice}}
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    var vm = new Vue({
+        el: "#divstudents",
+        data: {
+            list: []
+        },
+        mounted() {
+            this.pagehandler();
+        },
+        methods: {
+            pagehandler: function () {
+                axios.get("http://localhost:5585/api/Integral").then((response) => {
+                    this.list = []
+                    for (var i = 0; i < response.data.length; i++) {
+                        this.list.push(response.data[i]);
+                    }
+                    console.log(this.list)
+                });
+            }
+        }
+    })
+</script>

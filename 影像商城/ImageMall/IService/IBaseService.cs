@@ -25,7 +25,11 @@ namespace IService
         /// <returns></returns>
         int Insert(T entity);
 
-        //增加多个实体
+        /// <summary>
+        /// 增加多个实体
+        /// </summary>
+        /// <param name="entities"></param>
+        /// <returns></returns>
         int Insert(IEnumerable<T> entities);
 
         /// <summary>
