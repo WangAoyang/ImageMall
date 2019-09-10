@@ -11,7 +11,7 @@ namespace Model
     /// <summary>
     /// 积分表
     /// </summary>
-    public class Integral
+    public class Integral: BaseEntity
     {
         /// <summary>
         /// 编号

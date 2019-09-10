@@ -10,7 +10,7 @@ namespace Model
     /// <summary>
     /// 商品类别表
     /// </summary>
-    public class TypeInfo
+    public class TypeInfo: BaseEntity
     {
 
         /// <summary>

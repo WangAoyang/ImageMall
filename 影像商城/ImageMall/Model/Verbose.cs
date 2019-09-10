@@ -10,7 +10,7 @@ namespace Model
     /// <summary>
     /// 详细咨询表
     /// </summary>
-    public class Verbose
+    public class Verbose: BaseEntity
     {
         /// <summary>
         /// 详细咨询ID

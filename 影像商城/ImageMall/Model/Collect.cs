@@ -10,7 +10,7 @@ namespace Model
     /// <summary>
     /// 收藏表
     /// </summary>
-    public class Collect
+    public class Collect: BaseEntity
     {
         /// <summary>
         /// 编号

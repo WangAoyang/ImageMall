@@ -10,7 +10,7 @@ namespace Model
     /// <summary>
     /// 我的余额
     /// </summary>
-    public class MyBalance
+    public class MyBalance: BaseEntity
     {
         /// <summary>
         /// 编号

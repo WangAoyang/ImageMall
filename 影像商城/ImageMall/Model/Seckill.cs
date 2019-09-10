@@ -11,7 +11,7 @@ namespace Model
     /// <summary>
     /// 秒杀表
     /// </summary>
-    public class Seckill
+    public class Seckill: BaseEntity
     {
 
         /// <summary>
