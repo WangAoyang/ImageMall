@@ -20,7 +20,7 @@ namespace ImageMall_Web.Controllers
             //配置HTTP客户端要访问的服务器地址 主机名+端口+API+控制器+/
 
 
-            hc.BaseAddress = new Uri("http://localhost:61163/");
+            hc.BaseAddress = new Uri("http://localhost:5585/");
             hc.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
             HttpContent httpContent = new StringContent(obj.ToString());
