@@ -11,7 +11,7 @@ namespace Model
     /// <summary>
     /// 试用表
     /// </summary>
-    public class Probation
+    public class Probation : BaseEntity
     {
         /// <summary>
         /// 编号

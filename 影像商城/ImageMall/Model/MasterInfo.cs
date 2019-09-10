@@ -10,7 +10,7 @@ namespace Model
     /// <summary>
     /// 主数据表
     /// </summary>
-    public class MasterInfo
+    public class MasterInfo : BaseEntity
     {
         /// <summary>
         /// 编号

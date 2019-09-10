@@ -10,7 +10,7 @@ namespace Model
     /// <summary>
     /// 购物车
     /// </summary>
-    public class Shopping
+    public class Shopping : BaseEntity
     {
         /// <summary>
         /// 购物车Id

@@ -11,7 +11,7 @@ namespace Model
     /// <summary>
     /// 热门搜素
     /// </summary>
-    public class Search
+    public class Search : BaseEntity
     {
         /// <summary>
         /// Id

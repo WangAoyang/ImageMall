@@ -10,7 +10,7 @@ namespace Model
     /// <summary>
     /// 订单表
     /// </summary>
-    public class Indent
+    public class Indent : BaseEntity
     {
 
         /// <summary>

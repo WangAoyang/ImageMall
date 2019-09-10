@@ -10,7 +10,7 @@ namespace Model
     /// <summary>
     /// 我的积分
     /// </summary>
-   public  class MyIntegral
+   public  class MyIntegral : BaseEntity
     {
         /// <summary>
         /// 编号

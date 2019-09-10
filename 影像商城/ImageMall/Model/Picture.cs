@@ -11,7 +11,7 @@ namespace Model
     /// <summary>
     /// 图片表
     /// </summary>
-   public class Picture
+   public class Picture : BaseEntity
     {
         /// <summary>
         /// 图片表编号
