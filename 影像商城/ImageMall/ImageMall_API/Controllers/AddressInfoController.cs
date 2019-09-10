@@ -31,7 +31,7 @@ namespace ImageMall_API.Controllers
         /// </summary>
         /// <param name="student"></param>
         /// <returns></returns>
-        [HttpPost("Add")]
+        [HttpPost]
         public int Add(AddressInfo addressInfo)
         {
             int i = _addressInfoService.Insert(addressInfo);
