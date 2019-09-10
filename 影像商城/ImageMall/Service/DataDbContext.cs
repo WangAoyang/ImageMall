@@ -27,12 +27,15 @@ namespace Service
         public DbSet<Indent> Indent { get; set; }
         public DbSet<Information> Information { get; set; }
         public DbSet<InformationType> InformationType { get; set; }
+
         public DbSet<Integral> Integral { get; set; }
+
         public DbSet<Lease> Lease { get; set; }
         public DbSet<MasterInfo> MasterInfo { get; set; }
         public DbSet<MyBalance> MyBalance { get; set; }
         public DbSet<MyIntegral> MyIntegral { get; set; }
         public DbSet<Picture> Picture { get; set; }
+
         public DbSet<Probation> Probation { get; set; }
         public DbSet<Search> Search { get; set; }
         public DbSet<Seckill> Seckill { get; set; }
@@ -46,7 +49,7 @@ namespace Service
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseMySQL("Data Source=10.31.54.5;Initial Catalog=ImageMall;User ID=way;pwd=1234");
+                optionsBuilder.UseMySQL("Data Source=10.31.54.5;Initial Catalog=ImageMall;User ID=wy;pwd=1234");
             }
         }
 

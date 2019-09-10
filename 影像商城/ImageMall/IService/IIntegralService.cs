@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using Model;
 
 namespace IService
 {
-    public interface IIntegralService : IBaseService<Integral>
+   public interface IIntegralService : IBaseService<Integral>
     {
+
     }
 }

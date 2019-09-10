@@ -1,12 +1,18 @@
-﻿using System;
+﻿using IService;
+using Model;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using IService;
-using Model;
 
 namespace Service
 {
-    public class IntegralService:BaseService<Indent>,IIndentService
+    //public class IntegralService : BaseService<IntegralService>,IIntegralService
+    // { Integral
+    // }
+
+    public class IntegralService : BaseService<Integral>, IIntegralService
     {
+
     }
+
 }

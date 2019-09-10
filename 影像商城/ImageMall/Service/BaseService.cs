@@ -21,6 +21,7 @@ namespace Service
         {
             var list = Entities.ToList();
             return list;
+
         }
 
         public int Insert(T entity)
