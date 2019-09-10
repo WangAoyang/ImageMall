@@ -11,7 +11,7 @@ namespace Model
     /// <summary>
     /// 用户表
     /// </summary>
-    public class UserInfo : BaseEntity
+    public class UserInfo: BaseEntity
     {
 
         /// <summary>

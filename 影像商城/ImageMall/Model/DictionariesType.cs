@@ -11,7 +11,7 @@ namespace Model
     /// <summary>
     /// 字典类型表
     /// </summary>
-    public class DictionariesType : BaseEntity
+    public class DictionariesType: BaseEntity
     {
         /// <summary>
         /// 字典类别表Id

@@ -10,7 +10,7 @@ namespace Model
     /// <summary>
     /// 申请表
     /// </summary>
-    public class Application : BaseEntity
+    public class Application: BaseEntity
     {
         /// <summary>
         /// 编号

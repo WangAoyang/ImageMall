@@ -10,7 +10,7 @@ namespace Model
     /// <summary>
     /// 咨询表
     /// </summary>
-    public class Information : BaseEntity
+    public class Information: BaseEntity
     {
         /// <summary>
         /// 编号

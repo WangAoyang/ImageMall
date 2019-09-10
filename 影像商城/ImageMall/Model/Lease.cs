@@ -10,7 +10,7 @@ namespace Model
     /// <summary>
     /// 租赁表
     /// </summary>
-    public class Lease : BaseEntity
+    public class Lease: BaseEntity
     {
         /// <summary>
         /// 编号

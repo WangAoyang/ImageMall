@@ -10,7 +10,7 @@ namespace Model
     /// <summary>
     /// 评价表
     /// </summary>
-    public class Evaluate : BaseEntity
+    public class Evaluate: BaseEntity
     {
         /// <summary>
         /// 评价Id
