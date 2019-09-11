@@ -44,5 +44,12 @@ namespace ImageMall_API.Controllers
             var list = _addressInfoService.Index();
             return list;
         }
+
+        [HttpDelete]
+        public int Delete(int id)
+        {
+            int i = _addressInfoService.Delete(id);
+            return i;
+        }
     }
 }

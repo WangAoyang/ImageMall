@@ -13,17 +13,20 @@
                 <td>编号</td>
                 <td>地区名称</td>
                 <td>父级ID</td>
+                <td>操作</td>
         </thead>
         <tbody>
             <tr v-for="item in list">
                 <td>{{item.id}}</td>
                 <td>{{item.name}}</td>
                 <td>{{item.pid}}</td>
+                <td><a href="#" class="btn btn-danger btn-2g" v-on:click="Delete(item.id)">删除</a></td>
             </tr>
         </tbody>
     </table>
 </div>
 <script>
+    //显示
     var vm = new Vue({
         el: "#divstudents",
         data: {

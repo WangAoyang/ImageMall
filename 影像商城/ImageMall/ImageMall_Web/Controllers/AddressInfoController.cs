@@ -9,10 +9,19 @@ namespace ImageMall_Web.Controllers
 {
     public class AddressInfoController : Controller
     {
+        /// <summary>
+        /// 显示
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index()
         {
             return View();
         }
+
+        /// <summary>
+        /// 添加
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Adds()
         {
             return View();

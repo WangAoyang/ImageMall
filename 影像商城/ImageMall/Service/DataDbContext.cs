@@ -49,7 +49,7 @@ namespace Service
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseMySQL("Data Source=10.31.54.5;Initial Catalog=ImageMall;User ID=wy;pwd=1234");
+                optionsBuilder.UseMySQL("Data Source=10.31.54.5;Initial Catalog=ImageMall;User ID=way;pwd=1234");
             }
         }
 
