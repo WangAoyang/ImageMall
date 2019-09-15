@@ -29,7 +29,7 @@ namespace ImageMall_API.Controllers
         /// <summary>
         /// 添加
         /// </summary>
-        /// <param name="student"></param>
+        /// <param name="addressInfo"></param>
         /// <returns></returns>
         [HttpPost]
         public int Add(AddressInfo addressInfo)
@@ -38,6 +38,10 @@ namespace ImageMall_API.Controllers
             return i;
         }
 
+        /// <summary>
+        /// 显示
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public List<AddressInfo> GetAddressInfo()
         {
@@ -45,10 +49,34 @@ namespace ImageMall_API.Controllers
             return list;
         }
 
+        /// <summary>
+        /// 删除
+        /// </summary>
+        /// <param name="ids"></param>
+        /// <returns></returns>
         [HttpDelete]
-        public int Delete(int id)
+        public int Delete(int ids)
         {
-            int i = _addressInfoService.Delete(id);
+            var i = _addressInfoService.Delete(ids);
+            return i;
+        }
+        
+        //[HttpPut]
+        //public AddressInfo Find(int id)
+        //{
+        //    var i = _addressInfoService.GetModelById(id);
+        //    return i;
+        //}
+
+        /// <summary>
+        /// 修改
+        /// </summary>
+        /// <param name="addressInfo"></param>
+        /// <returns></returns>
+        [HttpPut]
+        public int Update(AddressInfo addressInfo)
+        {
+            var i = _addressInfoService.Update(addressInfo);
             return i;
         }
     }

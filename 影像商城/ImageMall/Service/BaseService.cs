@@ -43,10 +43,10 @@ namespace Service
             return dt.SaveChanges();
         }
 
-        public int Delete(object id)
+        public int Delete(int ids)
         {
             ///删除操作实现
-            var obj = Entities.Find(id);
+            var obj = Entities.Find(ids);
             Entities.Remove(obj);
             return dt.SaveChanges();
         }

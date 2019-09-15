@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using IService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Service;
 
 namespace ImageMall_Web
 {
@@ -32,6 +34,8 @@ namespace ImageMall_Web
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddScoped<IAddressInfoService, AddressInfoService>();   //注册数据访问层 接口与实现类 关系
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

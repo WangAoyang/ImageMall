@@ -44,7 +44,7 @@ namespace IService
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        int Delete(object id);
+        int Delete(int ids);
 
         /// <summary>
         /// 根据逐渐获取实体

@@ -6,7 +6,7 @@
 <script src="~/js/vue/axios.js"></script>
 <h2>Index</h2>
 <script src="~/js/jquery-3.3.1.js"></script>
-<div  id="divstudents">
+<div id="divstudents">
     <table class="table table-bordered">
         <thead>
             <tr>
@@ -20,17 +20,22 @@
                 <td>{{item.id}}</td>
                 <td>{{item.name}}</td>
                 <td>{{item.pid}}</td>
-                <td><a href="#" class="btn btn-danger btn-2g" v-on:click="Delete(item.id)">删除</a></td>
+                <td>
+                    <div v-if="item.id!=''">
+                        <a href="#" class="btn btn-danger btn-2g" v-on:click="DeleteById(item.id)">删除</a>
+                        &nbsp;&nbsp;
+                        <a href="#" class="btn btn-primary btn-2g" v-on:click="Update(item.id)">修改</a>
+                    </div>
+                </td>
             </tr>
         </tbody>
     </table>
 </div>
 <script>
-    //显示
     var vm = new Vue({
         el: "#divstudents",
         data: {
-            list:[]
+            list: []
         },
         mounted() {
             this.pagehandler();
@@ -44,7 +49,22 @@
                     }
                     console.log(this.list)
                 });
-            }
+            },
+            DeleteById: function (id) {
+                axios.delete("/addressInfo/Delete?ids=" + id).then((response) => {
+                    if (response.data > 0) {
+                        this.pagehandler();
+                        alert('删除成功!');
+                    }
+                },
+                    (response) => {
+                        alert(response.status);
+                    }
+                ).catch(function (response) {
+                    alert(response);
+                    alert('删除失败!')
+                });
+            },
         }
     })
 </script>
